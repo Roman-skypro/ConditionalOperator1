@@ -75,10 +75,9 @@ public class Main {
         System.out.println("Задача 7");
         int one = 1;
         int two = 31;
-        int three = 30;
-        int max;
+        int three = 3;
         if (one >= two && one >= three) {
-            System.out.println("большее число в переменно one " + one);
+        System.out.println("большее число в переменно one " + one);
         } else {
             if (two >= three) {
                 System.out.println("большее число в переменно two " + two);
