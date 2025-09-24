@@ -73,16 +73,16 @@ public class Main {
         }
         // task 7
         System.out.println("Задача 7");
-        int one = 4;
+        int one = 3;
         int two = 6;
-        int three = 5;
+        int three = 6;
         if (one >= two && one >= three) {
-            System.out.println("большее число в переменно one " + one);
+            System.out.println("большее число в переменной one " + one);
         } else {
             if (two >= three) {
-                System.out.println("большее число в переменно two " + two);
+                System.out.println("большее число в переменной two " + two);
             } else {
-                System.out.println("большее число в переменно three " + three);
+                System.out.println("большее число в переменной three " + three);
             }
 
 
