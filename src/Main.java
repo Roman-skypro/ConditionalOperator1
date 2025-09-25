@@ -24,24 +24,18 @@ public class Main {
         //task 3
         System.out.println("Задача 3");
         int speed = 65;
-        if (speed > 60) {
-            System.out.println("Если скорость " + speed + " км/ч. то придется заплатить штраф ");
-        } else {
-            System.out.println("Если скорость " + speed + " км/ч. можно ездить спокойно ");
-        }
+        if (speed > 60) {System.out.println("Если скорость " + speed + " км/ч. то придется заплатить штраф ");}
+        else {System.out.println("Если скорость " + speed + " км/ч. можно ездить спокойно ");}
         //task 4
         System.out.println("Задача 4");
         int instituteByAge = 25;
         if (instituteByAge >= 2 && instituteByAge <= 6) {
             System.out.println("Если возраст человека равен " + instituteByAge + " , то ему нужно ходить в детский сад");
-        }
-        if (instituteByAge >= 7 && instituteByAge <= 17) {
+        } else if (instituteByAge >= 7 && instituteByAge <= 17) {
             System.out.println("Если возраст человека равен " + instituteByAge + " , то ему нужно ходить в школу.");
-        }
-        if (instituteByAge >= 18 && instituteByAge <= 24) {
+        } else if (instituteByAge >= 18 && instituteByAge <= 24) {
             System.out.println("Если возраст человека равен " + instituteByAge + " , то ему нужно ходить в университет.");
-        }
-        if (instituteByAge > 24) {
+        } else if (instituteByAge > 24) {
             System.out.println("Если возраст человека равен " + instituteByAge + " , то ему пора ходить на работу.");
         }
         //task 5
@@ -49,46 +43,37 @@ public class Main {
         int ageLimitAttraction = 14;
         if (ageLimitAttraction < 5) {
             System.out.println("Если возраст ребенка равен " + ageLimitAttraction + " то ему нельзя кататься на аттракционе ");
-        }
-        if (ageLimitAttraction > 5 && ageLimitAttraction < 14) {
+        } else if (ageLimitAttraction > 5 && ageLimitAttraction < 14) {
             System.out.println("Если возраст ребенка равен " + ageLimitAttraction + " то ему можно кататься на аттракционе в сопровождении взрослого");
-        }
-        if (ageLimitAttraction >= 14) {
+        } else { // (ageLimitAttraction >= 14)
             System.out.println("Если возраст ребенка равен " + ageLimitAttraction + " то ему можно кататься на аттракционе без сопровождения взрослого");
         }
         // task 6
         System.out.println("Задача 6");
         int capacityСarriage = 102;
-        int SeatsCapaciti = 60;
+        int seatsCapacity = 60;
         int passengers = 102;
-        if (passengers < SeatsCapaciti) {
+        if (passengers < seatsCapacity) {
             System.out.println("Есть сидячие места");
-        } else {
+        } else if (passengers >= seatsCapacity && passengers <  capacityСarriage) {
             System.out.println("В вагоне нет сидячих мест, но есть стоячие.");
-        }
-        if (passengers < capacityСarriage) {
-            System.out.println("В вагоне есть стоячие места, сидячих мест нет");
-        } else {
+        } else { // passengers >= capacityCarriage
             System.out.println("В вагоне нет мест!!!");
         }
         // task 7
         System.out.println("Задача 7");
-        int one = 1;
+        int one = 9;
         int two = 31;
-        int three = 3;
-        if (one >= two && one >= three) {
-        System.out.println("большее число в переменно one " + one);
+        int three = 40;
+        if (one > two && one > three) {
+            System.out.println("Большее число в переменной one: " + one);
+        } else if (two > three) { // сравниваю two и three
+            System.out.println("Большее число в переменной two: " + two);
         } else {
-            if (two >= three) {
-                System.out.println("большее число в переменно two " + two);
-            } else {
-                System.out.println("большее число в переменно three " + three);
-            }
-
+            System.out.println("Большее число в переменной three: " + three);
         }
 
     }
 
 }
-
 
