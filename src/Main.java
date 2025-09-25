@@ -40,8 +40,8 @@ public class Main {
         }
         //task 5
         System.out.println("Задача 5");
-        int ageLimitAttraction = 14;
-        if (ageLimitAttraction < 5) {
+        int ageLimitAttraction = 6;
+        if (ageLimitAttraction <= 5) {
             System.out.println("Если возраст ребенка равен " + ageLimitAttraction + " то ему нельзя кататься на аттракционе ");
         } else if (ageLimitAttraction > 5 && ageLimitAttraction < 14) {
             System.out.println("Если возраст ребенка равен " + ageLimitAttraction + " то ему можно кататься на аттракционе в сопровождении взрослого");
@@ -52,10 +52,10 @@ public class Main {
         System.out.println("Задача 6");
         int capacityСarriage = 102;
         int seatsCapacity = 60;
-        int passengers = 102;
+        int passengers = 60;
         if (passengers < seatsCapacity) {
             System.out.println("Есть сидячие места");
-        } else if (passengers >= seatsCapacity && passengers <  capacityСarriage) {
+        } else if (passengers < capacityСarriage) {
             System.out.println("В вагоне нет сидячих мест, но есть стоячие.");
         } else { // passengers >= capacityCarriage
             System.out.println("В вагоне нет мест!!!");
@@ -63,11 +63,11 @@ public class Main {
         // task 7
         System.out.println("Задача 7");
         int one = 9;
-        int two = 31;
+        int two = 39;
         int three = 40;
         if (one > two && one > three) {
             System.out.println("Большее число в переменной one: " + one);
-        } else if (two > three) { // сравниваю two и three
+        } else if (two > three && two > one) { // сравниваю two и three
             System.out.println("Большее число в переменной two: " + two);
         } else {
             System.out.println("Большее число в переменной three: " + three);
