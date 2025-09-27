@@ -5,6 +5,7 @@ public class Main {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
         System.out.println("ConditionalOperator1");
+         HomeWork1-ConditionalOperator
         //task 1
         System.out.println("Задача 1");
         int age = 19;
@@ -71,6 +72,8 @@ public class Main {
             System.out.println("Большее число в переменной two: " + two);
         } else {
             System.out.println("Большее число в переменной three: " + three);
+
+       master
         }
 
     }
