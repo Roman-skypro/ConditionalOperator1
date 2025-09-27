@@ -5,11 +5,78 @@ public class Main {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
         System.out.println("ConditionalOperator1");
-        
+         HomeWork1-ConditionalOperator
+        //task 1
+        System.out.println("Задача 1");
+        int age = 19;
+        if (age >= 18) {
+            System.out.println("Если возраст человека равен " + age + ", то он совершеннолетний ");
+        } else {
+            System.out.println("Если возраст человека меньше " + age + ", то он не достиг совершеннолетия, нужно немного подождать.");
+        }
+        //task 2
+        System.out.println("Задача 2");
+        int temperature = 25;
+        if (temperature < 5) {
+            System.out.println("На улице " + temperature + ", нужно надеть шапку");
+        } else {
+            System.out.println("На улице " + temperature + ", можно идти без шапки");
+        }
+        //task 3
+        System.out.println("Задача 3");
+        int speed = 65;
+        if (speed > 60) {System.out.println("Если скорость " + speed + " км/ч. то придется заплатить штраф ");}
+        else {System.out.println("Если скорость " + speed + " км/ч. можно ездить спокойно ");}
+        //task 4
+        System.out.println("Задача 4");
+        int instituteByAge = 25;
+        if (instituteByAge >= 2 && instituteByAge <= 6) {
+            System.out.println("Если возраст человека равен " + instituteByAge + " , то ему нужно ходить в детский сад");
+        } else if (instituteByAge >= 7 && instituteByAge <= 17) {
+            System.out.println("Если возраст человека равен " + instituteByAge + " , то ему нужно ходить в школу.");
+        } else if (instituteByAge >= 18 && instituteByAge <= 24) {
+            System.out.println("Если возраст человека равен " + instituteByAge + " , то ему нужно ходить в университет.");
+        } else if (instituteByAge > 24) {
+            System.out.println("Если возраст человека равен " + instituteByAge + " , то ему пора ходить на работу.");
+        }
+        //task 5
+        System.out.println("Задача 5");
+        int ageLimitAttraction = 6;
+        if (ageLimitAttraction <= 5) {
+            System.out.println("Если возраст ребенка равен " + ageLimitAttraction + " то ему нельзя кататься на аттракционе ");
+        } else if (ageLimitAttraction > 5 && ageLimitAttraction < 14) {
+            System.out.println("Если возраст ребенка равен " + ageLimitAttraction + " то ему можно кататься на аттракционе в сопровождении взрослого");
+        } else { // (ageLimitAttraction >= 14)
+            System.out.println("Если возраст ребенка равен " + ageLimitAttraction + " то ему можно кататься на аттракционе без сопровождения взрослого");
+        }
+        // task 6
+        System.out.println("Задача 6");
+        int capacityСarriage = 102;
+        int seatsCapacity = 60;
+        int passengers = 60;
+        if (passengers < seatsCapacity) {
+            System.out.println("Есть сидячие места");
+        } else if (passengers < capacityСarriage) {
+            System.out.println("В вагоне нет сидячих мест, но есть стоячие.");
+        } else { // passengers >= capacityCarriage
+            System.out.println("В вагоне нет мест!!!");
+        }
+        // task 7
+        System.out.println("Задача 7");
+        int one = 9;
+        int two = 39;
+        int three = 40;
+        if (one > two && one > three) {
+            System.out.println("Большее число в переменной one: " + one);
+        } else if (two > three && two > one) { // сравниваю two и three
+            System.out.println("Большее число в переменной two: " + two);
+        } else {
+            System.out.println("Большее число в переменной three: " + three);
+
+       master
         }
 
     }
 
 }
-
 
